@@ -17,6 +17,8 @@ int main ()
         printf("%d\n",array[i]);  // i yi 0 4 8 yapan ve o indextekini yazdıran bir döngü
     }
 
+    bora [5]= 15; //5. indexteki elemanı 15 yaptım
+
     return 0;
 
 

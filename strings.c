@@ -41,5 +41,30 @@ int main()
     strcat(bora, "123");   //! dikkat: yer yetmezse patlar
     printf("bora yeni hali: %s\n", bora);
 
+        // strrev → stringi ters çevirir
+    strrev(bora);
+    printf("strrev sonucu: %s\n", bora);
+    // çıktı: arob
+
+    // strlwr → tüm harfleri küçük yapar
+    strcpy(bora, "BoRa");
+    strlwr(bora);
+    printf("strlwr sonucu: %s\n", bora);
+    // çıktı: bora
+
+    // strupr → tüm harfleri büyük yapar
+    strcpy(bora, "BoRa");
+    strupr(bora);
+    printf("strupr sonucu: %s\n", bora);
+    // çıktı: BORA
+
+    // strstr → bir string içinde arama yapar
+    char metin[] = "merhaba bora";
+    char *sonuc;
+
+    sonuc = strstr(metin, "bora");
+    printf("strstr sonucu: %s\n", sonuc);
+    // çıktı: bora
+    // (bulduğu kelimenin başladığı yerden itibaren yazdırır)
 
 }

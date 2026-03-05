@@ -22,4 +22,3 @@ int main()
     printf("Girdigin isim fgets ile alınıyor: %s", isim2);
 
     return 0;
-}

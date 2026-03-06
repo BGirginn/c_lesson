@@ -18,7 +18,6 @@
 
 // #undef -> macronun tanımlanmış olması durumunu bitirir geçici olarak kullanım dışı falan bırakmak istediğinde kullanırsın
 
-
 int main()
 {
 
@@ -34,6 +33,23 @@ int main()
     printf("%f\n", circleArea(yaricap)); // bu şekilde kullanabilirsin ya da ayrı yerde printf olmadan da çağırırsın düz function işte
     //? alternatif yöntem: alan=circleArea(yaricap); printf(alan); tarzi
 
+#ifdef PI // eğer kodda PI tanımlı ise altındaki kod endif e kadar çalışır
+    printf("PI tanımlanmıştır\n");
+
+#else // buraya da tanımlı değilse çalışacak kodu yazarsın
+    printf("PI tanımlanmamıştır");
+
+#endif PI
+
+#ifndef bora   // bora tanımlı mı kontrol et eğer tanımlı değilse tam alttaki satırı çalıştır tanımlıysa zaten çalışmaz
+#define bora 5 // bora tanımlı değilse çalışacak ve borayı tanımlayacak
+
+#endif
+
+
+#ifndef MAX_SIZE
+//! #error MAX_SIZE tanimlanmamis
+#endif
 
     return 0;
 }

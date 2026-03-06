@@ -21,8 +21,8 @@ int toplama(int sayi)
 
 int main()
 {
-    int sonuc1 = faktoriyel(5);
-    printf("%d\n|", sonuc1);
+    int sonuc = faktoriyel(5);
+    printf("%d", sonuc);
 
     int sayi;
     int sonuc;

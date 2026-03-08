@@ -41,7 +41,7 @@ int main()
     printf("%d\n", p->yas);
 
     struct A a = {7};  // A structundaki x değişkeninin içine 7 değerini atar. a.x = 7; a denk gelir
-    struct A *g = &a;  // pointer oluşturup a değişkeninin adresine bağlar 
+    struct A *g = &a;  // pointer oluşturup a değişkeninin adresine bağlar
 
     //! bence daha çok üstteki k ile olanı kullan daha adım adım ve ne olduğu anlaşılıyor
 

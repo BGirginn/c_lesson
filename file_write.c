@@ -1,6 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//? fprintf = dosyanın içine yazmak için her türdeki veriyi yazmak için yani başta f varsa o file anlamına geliyor.
+//? fputs sadece string tipi yazmak için
+//? fputc sadece tek karakter yani char yazmak istersen kullanılır
+/*  | mod  | anlamı          |
+    | ---- | --------------- |
+    | "w"  | yaz ve sıfırla  |
+    | "a"  | sona ekle       |
+    | "r"  | sadece oku      |
+    | "w+" | oku + yaz       |
+    | "a+" | oku + sona ekle | */
+
+
 int main()
 {
     FILE *dosya;
@@ -29,7 +41,7 @@ int main()
     // 100 -> maksimum okunacak karakter sayısı
     // dosya -> okunacak dosyanın pointerı
     {
-        printf("%s", veri);
+        printf("%s", veri);  // burada \n kullanırsan iki tane boşluk bırakır cünkü dosyada veriler zaten uygun satırlarda senin ayırmana gerek yok
     } // bu döngü dosyadan satır satır veri almak için
 
     fclose(dosya); // dosya işlemi bitince kapat
